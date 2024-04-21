@@ -18,8 +18,8 @@ public class MoviebookingsystemApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         SignUpRequestDTO signUpRequestDTO = new SignUpRequestDTO();
-        signUpRequestDTO.setEmail("nilesh12ghatol@gmail.com");
-        signUpRequestDTO.setPassword("1223234");
+        signUpRequestDTO.setEmail("");
+        signUpRequestDTO.setPassword("");
 //        userController.signUp(signUpRequestDTO);
        SignUpResponseDTO signUpResponseDTO = userController.userLogin(signUpRequestDTO);
        if (signUpResponseDTO.getResponseStatus().equals(ResponseStatus.SUCCESS)){
